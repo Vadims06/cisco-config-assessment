@@ -350,7 +350,7 @@ def individual_table(report, with_config):
   print "Config generation has been finished!"
 
 if __name__ == '__main__':
-  conn_threads(connect_ssh, devices['routers'], 'show run')
+  conn_threads(connect_ssh, devices['switches'], 'show run')
 #  print tabulate(rows, headers, tablefmt='grid')
   summary_table(report)
   individual_table(report, with_config=True)
