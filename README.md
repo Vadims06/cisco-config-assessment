@@ -40,3 +40,24 @@ In order to iterate over all ospf interfaces and check md5 password you need spe
 "show ip ospf int br | interface, ip ospf message-digest-key [\d]+ md5 7 .*"
 ```
 It means that we take 'interface' key in the dictionary and send additional command to cisco device. We make only single SSH connection, but send multiple commands.
+
+##### Where you can find full config assessment check list?
+You can find quite full check list with Cisco commands here in "CIS Cisco IOS 12 Benchmark"
+```
+BOTH CIS SECURITY BENCHMARKS DIVISION MEMBERS AND NON-MEMBERS MAY:
+Print one or more copies of any SB Product that is in a .txt, .pdf, .doc, .mcw, or .rtf format, but only if each such copy is printed in
+its entirety and is kept intact, including without limitation the text of these CIS Security Benchmarks Terms of Use.
+```
+[CIS Cisco IOS 12 Benchmark.pdf](http://www.itsecure.hu/library/image/CIS_Cisco_IOS_12_Benchmark_v4.0.0.pdf "Check List")
+```
+1 Management Plane
+1.1 Local Authentication, Authorization and Accounting (AAA) Rules
+1.1.1 Enable 'aaa new-model' (Scored)  
+1.1.2 Enable 'aaa authentication login' (Scored)  
+1.1.3 Enable 'aaa authentication enable default' (Scored)  
+1.1.4 Set 'login authentication for 'line con 0' (Scored)  
+1.1.5 Set 'login authentication for 'line tty' (Scored)  
+1.1.6 Set 'login authentication for 'line vty' (Scored)  
+1.1.7 Set 'aaa accounting' to log all privileged use commands using 'commands 15' (Scored)  
+<omited>
+```
