@@ -61,7 +61,7 @@ its entirety and is kept intact, including without limitation the text of these 
 1.1.7 Set 'aaa accounting' to log all privileged use commands using 'commands 15' (Scored)  
 <omited>
 ```
-##### Before using?
+##### Before using
 Pls kindly specify SMTP settings in mail.py script.
 ```
 msg['From'] = 'pythontest@some_domain.com'
